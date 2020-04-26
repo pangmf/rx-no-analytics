@@ -1,0 +1,15 @@
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: CmdLine@2
+  displayName: 'Push updates to Github'
+  inputs:
+    script: |
+      set -ex
+      git remote add mirror https://$(GITHUB_ACCESS_TOKEN)@github.com/$(GITHUB_REPO).git
+      git push mirror master
+    workingDirectory: '$(Build.SourcesDirectory)'
