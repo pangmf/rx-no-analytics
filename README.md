@@ -6,7 +6,7 @@ Prevent tracking SDKs to run with Greenify prescription feature.
 # Installation
 
 1. Install [Greenify](https://www.apkmirror.com/apk/oasis-feng/greenify/)
-2. [Apply this rule](https://greenify.github.io/FeiyangOnline/rx-no-analytics)
+2. [Apply this rule](https://greenify.github.io/pangmf/rx-no-analytics)
 
 # Disclaimer
 
